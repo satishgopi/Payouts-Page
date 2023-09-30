@@ -1,14 +1,4 @@
 
-/* @import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt'); */
-/* @font-face {
-    font-family: "Galano Grotesque Alt W00 Th It";
-    src: url("https://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.eot");
-    src: url("https://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.svg#Galano Grotesque Alt W00 Th It")format("svg");
-} */
 @font-face {
     font-family: "Galano Grotesque";
     src: url('https://www.bu.edu/cdn/fonts/Galano-Grotesque/GalanoGrotesqueMedium.woff2') format('woff2'),
@@ -405,6 +395,7 @@ line-height: 20px;
     padding: 6px 12px;
     border-radius: 4px;
     border: 1px solid #D9D9D9;
+    color: var(--c-drak-4D4D);
     background-color: var(--c-white);
     display: flex;
     align-items: center;
