@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- Side Nav -->
     <nav class="side-nav">
         <div>
             <div class="brand-logo-box">
@@ -20,13 +21,7 @@
                 <a href="#">
                     <img src="./Assets/ic_down_arrow_white.svg" alt="">
                 </a>
-                <!-- <select name="cars" id="cars">
-                    <option value="volvo">
-                    </option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select> -->
+               
             </div>
         <ul class="nav-links">
             <li>
@@ -54,7 +49,7 @@
             <li>
                 <a href="#"><img width="20" height="20" src="./Assets/ic_analytics.svg" alt="Analytics-icon">Analytics</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="#"><img width="20" height="20" src="./Assets/ic_payouts.svg" alt="Payouts-icon">Payouts</a>
             </li>
             <li>
@@ -83,10 +78,14 @@
             </div>
         </div>
     </nav>
-    <section>
+
+    <!-- Right Side Box -->
+    <div class="right-side-section">
+        <!-- Header -->
         <header>
             <div class="header-flex">
                 <div class="help-box">
+                    <h1>Payouts</h1>
                     <a href="#">
                         <img width="14" height="14" src="./Assets/ic_Help.svg" alt="">
                     </a>
@@ -98,16 +97,148 @@
                 </div>
                 <div class="header-msg-box">
                     <div class="d-flex">
-                        <div>
-                            <img src="./Assets/ic_message.svg" alt="">
-                        </div>
-                        <div>
-                            <img src="./Assets/ic_Help.png" alt="">
-                        </div>
+                        <a href="#">
+                            <div class="gray-circle"><img src="./Assets/ic_message.svg" alt=""></div>
+                        </a>
+                        <a href="#">
+                            <div class="gray-circle"><img src="./Assets/ic-dropdown-dark.svg" alt=""></div>
+                        </a>
                     </div>
                 </div>
             </div>
         </header>
-    </section>
+        <!--Dash Board -->
+        <section class="dash-board">
+            <div class="overview">
+                <h1>Overview</h1>
+                <div class="overview-dropdwon">
+                    <select name="month" class="month-dropdown" >
+                        <option value="This Month">This Month</option>
+                        <option value="2">Last Month</option>
+                        <option value="3">First Month</option>
+                        <option value="4">Year</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cards-box">
+                <div class="count-box">
+                    <div class="amount-title">
+                        <h1>Next Payout</h1>
+                        <a href="#"><img width="16" height="16" src="./Assets/ic_Help.svg" alt=""></a>
+                    </div>
+                    <div class="amout-num">
+                        <h1>₹92,312.20</h1>
+                        <p>Next payout date: <span>Today, 04:00PM</span></p>
+                    </div>
+                    <div class="orders">
+                        <a href="#">View 13 orders</a>
+                    </div>
+                </div>
+                <div class="count-box">
+                    <div class="amount-title">
+                        <h1>Next Payout</h1>
+                        <a href="#"><img width="16" height="16" src="./Assets/ic_Help.svg" alt=""></a>
+                    </div>
+                    <div class="amout-num">
+                        <h1>₹92,312.20</h1>
+                        <p class="visibilty-hide">Next payout date: <span>Today, 04:00PM</span></p>
+                    </div>
+                    <div class="orders">
+                        <a href="#">View 13 orders</a>
+                    </div>
+                </div>
+                <div class="count-box">
+                    <div class="amount-title">
+                        <h1>Next Payout</h1>
+                        <a href="#"><img width="16" height="16" src="./Assets/ic_Help.svg" alt=""></a>
+                    </div>
+                    <div class="amout-num">
+                        <h1>₹92,312.20</h1>
+                        <p class="visibilty-hide">Next payout date: <span>Today, 04:00PM</span></p>
+                    </div>
+                    <div class="orders">
+                        <a href="#">View 13 orders</a>
+                    </div>
+                </div>
+            </div>
+            <div class="transaction-box">
+                <h1>Transactions | This Month</h1>
+                <div class="pay-ref-btn">
+                    <button class="btn-disble">Payouts (22)</button>
+                    <button class="btn-active">Refunds (6)</button>
+                </div>
+                <div class="order-history">
+                    <div class="order-search">
+                        <div class="order-search-box">
+                            <img src="./Assets/ic_search.svg">
+                            <input type="search" placeholder="Order ID or transaction ID">
+                        </div>
+                        <div class="filter-box">
+                            <a href="#">Sort <img src="./Assets/ic_sort.svg" alt=""/></a>
+                            <a href="#"><img src="./Assets/ic_download.svg" alt=""/></a>
+                        </div>
+                    </div>
+                    <table class="order-histroy-table">
+                        <thead class="table-header">
+                            <tr >
+                                <th>Order ID</th>
+                                <th>Status</th>
+                                <th>Transaction ID</th>
+                                <th>Refund date</th>
+                                <th>Order amount</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#281209</td>
+                                <td class="succes-circle">Successful</td>
+                                <td>131634495747</td>
+                                <td>Today, 08:45 PM</td>
+                                <td>₹1,125.00</td>
+                            </tr>
+                            <tr>
+                                  <td>#281209</td>
+                                  <td class="proce-circle">Processing</td>
+                                  <td>131634495747</td>
+                                  <td>Yesterday, 3:00 PM</td>
+                                  <td>₹1,125.00</td>
+                            </tr>
+                            <tr>
+                                <td>#281209</td>
+                                <td class="succes-circle">Successful</td>
+                                <td>131634495747</td>
+                                <td>Today, 08:45 PM</td>
+                                <td>₹1,125.00</td>
+                            </tr>
+                            <tr>
+                                <td>#281209</td>
+                                <td class="succes-circle">Successful</td>
+                                <td>131634495747</td>
+                                <td>Today, 08:45 PM</td>
+                                <td>₹1,125.00</td>
+                            </tr>
+                            <tr>
+                                <td>#281209</td>
+                                <td class="succes-circle">Successful</td>
+                                <td>131634495747</td>
+                                <td>Today, 08:45 PM</td>
+                                <td>₹1,125.00</td>
+                            </tr>
+                            <tr>
+                                <td>#281209</td>
+                                <td class="succes-circle">Successful</td>
+                                <td>131634495747</td>
+                                <td>Today, 08:45 PM</td>
+                                <td>₹1,125.00</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    
 </body>
 </html>
